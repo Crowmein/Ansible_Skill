@@ -1,0 +1,11 @@
+---
+
+- hosts: localhost
+  become: yes
+  
+  tasks:
+    - name: "Launching mysql"
+      service:
+        name: mysql
+        status: started
+        enabled: yes
